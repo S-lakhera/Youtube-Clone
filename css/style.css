@@ -27,15 +27,17 @@ i,button{
 
 /* Filters CSS */
 .filters{
-    width: 90%;
+    position: sticky;
+    top: 56px; 
+    z-index: 900;
+    background: #0f0f0fe0;
+    width: calc(100% - 80px); 
+    margin-left: 80px;
     height: 7vh;
-    position: relative;
-    left: 7%;
-    /* margin-top: px; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+    overflow-x: auto;
+    justify-content: space-evenly;
 }
 
 .filter{
@@ -54,17 +56,21 @@ i,button{
 
 /* Videos CSS */
 .videos-grid{
+    width: 98%;
+    margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
-    margin: 10px auto;
+    gap: 15px;
+    padding-left: 80px;
+    margin-top: 60px;
 }
 
 .card{
-    width: 33%;
+    flex-basis: calc(33% - 10px);
     border-radius: 15px;
     transition: 0.25s;
     cursor: pointer;
+    padding: 10px ;
 }
 
 .card:hover{
@@ -74,9 +80,22 @@ i,button{
 
 .card .thumbnail{
     width: 100%;
-    padding: 15px;
     border-radius: 15px;
     object-fit: cover;
+}
+
+.thumb{
+    position: relative;
+}
+
+.duration{
+    position: absolute;
+    bottom: 4.5%;
+    right: 2.5%;
+    background-color: #22212190;
+    padding: 2px 4px;
+    font-size: 14px;
+    border-radius: 5px;
 }
 
 .card-details{
@@ -110,3 +129,4 @@ i,button{
     /* padding: 5px; */
     font-size: 14px;
 }
+

@@ -4,13 +4,14 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 10px ;
+    padding: 10px 15px;
     position: fixed;
+    width: 80px;
+    margin-top: 60px;
 }
 
 .sidebar i{
     font-size: 28px;
-    /* padding: 15px; */
     color: white;
 }
 .sidebar p{
@@ -25,4 +26,65 @@
     align-items: center;
     cursor: pointer;
     gap: 4px;
+}
+
+/* Expanded sidebar */
+.exp-sidebar{
+    display: none;
+    width: 190px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px ;
+    padding-top: 4px;
+    position: fixed;
+    margin-top: 56px;
+}
+
+
+.exp-sidebar i{
+    font-size: 24px;
+    color: white;
+    font-weight: 300;
+}
+.exp-sidebar p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.exp-sidebar div{
+    width: 100%;
+    padding: 5px 12px;
+    border-radius: 10px;
+    display: grid;
+    cursor: pointer;
+    align-items: center;
+    /* position: relative; */
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "icon text";
+}
+
+.exp-sidebar div i{
+    width: 20%;
+    /* position: absolute; */
+    grid-area: icon;
+    
+}
+
+.exp-sidebar div p{
+    width: 80%;
+    grid-area: text;
+    justify-self: center;
+}
+
+.active{
+    background-color: #232323;
+}
+#divider{
+    width: 190px;
+    height: 1px;
+    background-color: rgb(98, 98, 98);
+    padding: 0;
 }

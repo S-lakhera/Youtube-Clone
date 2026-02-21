@@ -1,12 +1,16 @@
 
 nav{
-    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    width: 100%;
+    height: 56px;
     padding: 8px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* position: ; */
-    background-color: #0f0f0fa0;
+    background-color: #0f0f0fe0;
 }
 
 #left{
@@ -43,7 +47,7 @@ nav{
     overflow: hidden;
     outline: none;
 }
-#searchInput:focus-within {
+#searchInput:focus {
     border-color: rgba(25, 107, 250, 0.79);
 }
 #searchIcon{

@@ -58,7 +58,7 @@ function renderFilters(){
     var button = document.createElement('button')
     button.textContent = filter
     button.setAttribute('class','filter')
-    activeFilter == filter ? button.className = 'filter activeFilter': 'filter'
+    button.className = activeFilter === filter ? 'filter activeFilter' : 'filter';
     
     button.addEventListener('click', () => {
         activeFilter = filter;
@@ -79,8 +79,11 @@ function renderVideos(videoList){
         var videoCard = document.createElement('div')
         videoCard.setAttribute('class','card')
         videoCard.innerHTML = `
-        <img class="thumbnail" src="${v.thumbnail}" alt="Thumbnail" />
         
+        <div class="thumb">
+            <img class="thumbnail" src="${v.thumbnail}" alt="Thumbnail" />
+            <span class="duration">${v.duration}</span>
+        </div>
         <div class='card-details'>
             <img  src="${v.channelAvatar}" alt="logo" />
             <div>
