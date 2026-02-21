@@ -1,0 +1,87 @@
+
+nav{
+    width: 100vw;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: ; */
+    background-color: #0f0f0fa0;
+}
+
+#left{
+    display: flex;
+}
+#left i{
+    font-size: 22px;
+    padding: 9px;
+}
+#left a img{
+    height: 40px;
+}
+
+/* Center content CSS */
+#center{
+    display: flex;
+    gap: 13px;
+}
+#searchBox{
+    display: flex;
+    width: 44vw;
+    justify-content: space-between;
+    padding: 1px;
+    height: 7vh;
+}
+#searchInput{
+    width: 100%;
+    background-color: transparent;
+    padding: 3px 20px;
+    border: 0.25px solid rgb(64, 64, 64);
+    border-radius: 30px 0 0 30px;
+    color: white;
+    font-size: 16px;
+    overflow: hidden;
+    outline: none;
+}
+#searchInput:focus-within {
+    border-color: rgba(25, 107, 250, 0.79);
+}
+#searchIcon{
+    padding: 5px 20px;
+    background-color: #232323;
+    border-radius: 0 30px 30px 0;
+    font-size: 24px;
+}
+#micSearch{
+    background-color: #232323;
+    padding: 10px;
+    font-size: 24px;
+
+}
+
+/* Right content CSS */
+#right{
+    display: flex;
+    gap: 10px;
+}
+#create{
+    display: flex;
+    background-color: #232323;
+    border-radius: 25px;
+    padding: 10px 15px;
+    gap: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Nav Buttons */
+nav button{
+    border-radius: 25px;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
