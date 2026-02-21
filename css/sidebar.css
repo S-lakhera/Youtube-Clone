@@ -25,7 +25,13 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    gap: 4px;
+    /* gap: px; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sidebar div:hover{
+    background-color: #272727;
 }
 
 /* Expanded sidebar */
@@ -87,4 +93,8 @@
     height: 1px;
     background-color: rgb(98, 98, 98);
     padding: 0;
+}
+
+.exp-sidebar div:hover{
+    background-color: #272727;
 }
