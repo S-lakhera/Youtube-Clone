@@ -12,6 +12,10 @@ html,body {
   color: white;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -47,7 +51,7 @@ i,button{
     color: #fff;
     border: none;
     border-radius: 8px;
-    padding: 10px 18px;
+    padding: 10px 17px;
     font-weight: 600;
 }
 
@@ -73,11 +77,20 @@ i,button{
     transition: 0.25s;
     cursor: pointer;
     padding: 10px ;
+    transition: 0.4s ease;
 }
 
 .card:hover{
-    background-color: #18222e;
+    background-color: #18222e ;
     scale: 1.001;
+}
+
+.bgc2:hover{
+    background-color: #2e2018;
+}
+
+.bgc3:hover{
+    background-color: #3f3f3f;
 }
 
 .card .thumbnail{

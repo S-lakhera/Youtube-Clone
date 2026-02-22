@@ -18,7 +18,12 @@ nav{
 }
 #left i{
     font-size: 22px;
-    padding: 9px;
+    padding: 7px;
+    padding-top: 9px;
+    border-radius: 25%;
+}
+#menu:hover{
+    background-color: #2a2a2a;
 }
 #left a img{
     height: 40px;

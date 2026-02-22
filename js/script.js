@@ -96,6 +96,12 @@ function renderVideos(videoList){
             </div>
         </div>
         `
+        if(v.uploaded.includes('month')){
+            videoCard.classList.add('bgc2')
+        }
+        else if(v.uploaded.includes('day')){
+            videoCard.classList.add('bgc3')
+        }
 
         videosContainer.appendChild(videoCard)
         

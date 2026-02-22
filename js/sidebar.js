@@ -11,12 +11,11 @@ menu.addEventListener('click',() => {
         {
             sidebar.style.display = 'none'
             expSidebar.style.display = 'flex'
-            filters.style.width = 'clac(100% - 200px)'
-            filters.style.marginLeft = '200px'
+            filters.style.width = 'calc(100% - 200px)'
+            filters.style.marginLeft = '190px'
             videosGrid.style.paddingLeft = '190px'
         }
         else{
-            console.log('not flex');
             sidebar.style.display = 'flex'
             expSidebar.style.display = 'none'
             filters.style.width = 'clac(100% - 80px)'
