@@ -10,7 +10,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #0f0f0fe0;
+    background-color: #0f0f0f96;
+    backdrop-filter: blur(10px);
 }
 
 #left{
